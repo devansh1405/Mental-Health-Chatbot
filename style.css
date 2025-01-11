@@ -1,0 +1,153 @@
+/* Import a calming font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: #00796b;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #4db6ac;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Suggestion list styles */
+.suggestion-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.suggestion {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.suggestion .text {
+  color: #00796b;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+.suggestion .icon {
+  color: #4db6ac;
+  font-size: 1.5rem;
+}
+
+/* Chat list styles */
+.chat-list {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Typing area styles */
+.typing-area {
+  width: 100%;
+  max-width: 800px;
+}
+
+.typing-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.typing-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+  padding: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  color: #00796b;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #4db6ac;
+}
+
+.disclaimer-text {
+  text-align: center;
+  color: #757575;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .suggestion-list {
+    flex-direction: column;
+  }
+
+  .suggestion {
+    width: 100%;
+  }
+}
